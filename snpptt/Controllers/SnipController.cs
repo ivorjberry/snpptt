@@ -11,6 +11,12 @@ namespace snpptt.Controllers
 {
     public class SnipController : ApiController
     {
+        Snip[] tempSnapshots = new Snip[]
+        {
+            new Snip {URL = "http://www.google.com", WindowHeight = 800, WindowWidth = 1200, ScrollPosition = 0, Snapshot = new Rectangle(200,200,300,200)},
+            new Snip {URL = "http://www.bing.com", WindowHeight = 800, WindowWidth = 1200, ScrollPosition = 0, Snapshot = new Rectangle(200,200,100,100)}
+        };
+
         // Get all cached snips for a given user
         
         // Add snip for user
