@@ -1,0 +1,90 @@
+﻿@model snpptt.Models.Bookmark
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bookmark</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.URL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.URL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WindowWidth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WindowWidth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WindowHeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WindowHeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ScrollPosition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ScrollPosition)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SnipX)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SnipX)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SnipY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SnipY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SnipWidth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SnipWidth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SnipHeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SnipHeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Username)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
